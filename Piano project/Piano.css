@@ -1,0 +1,271 @@
+html {
+    width: 98%;
+    height: 98%;
+}
+#Piano {
+    width: 1300px;
+    height: 350px;
+    border: black 1px solid;
+    position: absolute;
+}
+#nootwit1 {
+    width: 50px;
+    height: 350px;
+    border: solid black 1px; 
+    
+}
+#nootwit2 {
+    width: 50px;
+    height: 350px;
+    border: solid black 1px;
+    position: relative;
+}
+#nootwit3 {
+    width: 50px;
+    height: 350px;
+    border: solid black 1px;
+    position: relative;
+}
+#nootwit4 {
+    width: 50px;
+    height: 350px;
+    border: solid black 1px;
+    position: relative;
+}
+#nootwit5 {
+    width: 50px;
+    height: 350px;
+    border: solid black 1px;
+    position: relative;  
+}
+#nootwit6 {
+    width: 50px;
+    height: 350px;
+    border: solid black 1px;
+    position: relative;
+}
+#nootwit7 {
+    width: 50px;
+    height: 350px;
+    border: solid black 1px;
+    position: relative;
+}
+#nootwit8 {
+    width: 50px;
+    height: 350px;
+    border: solid black 1px;
+    position: relative;
+}
+#nootwit9 {
+    width: 50px;
+    height: 350px;
+    border: solid black 1px;
+    position: relative;
+}
+#nootwit10 {
+    width: 50px;
+    height: 350px;
+    border: solid black 1px;
+    position: relative;
+}
+#nootwit11 {
+    width: 50px;
+    height: 350px;
+    border: solid black 1px;
+    position: relative;
+}
+#nootwit12 {
+    width: 50px;
+    height: 350px;
+    border: solid black 1px;
+    position: relative;
+}
+#nootwit13 {
+    width: 50px;
+    height: 350px;
+    border: solid black 1px;
+    position: relative;
+}
+#nootwit14 {
+    width: 50px;
+    height: 350px;
+    border: solid black 1px;
+    position: relative;
+}
+#nootwit15 {
+    width: 50px;
+    height: 350px;
+    border: solid black 1px;
+    position: relative;
+}
+#nootwit16 {
+    width: 50px;
+    height: 350px;
+    border: solid black 1px;
+    position: relative;
+}
+#nootwit17 {
+    width: 50px;
+    height: 350px;
+    border: solid black 1px;
+    position: relative;
+}
+#nootwit18 {
+    width: 50px;
+    height: 350px;
+    border: solid black 1px;
+    position: relative;
+}
+#nootwit19 {
+    width: 50px;
+    height: 350px;
+    border: solid black 1px;
+    position: relative;
+}
+#nootwit20 {
+    width: 50px;
+    height: 350px;
+    border: solid black 1px;
+    position: relative;
+}
+#nootwit21 {
+    width: 50px;
+    height: 350px;
+    border: solid black 1px;
+    position: relative;
+}
+#nootzwart1 {
+    width: 40px;
+    height: 155px;
+    border: solid black 1px;
+    position: relative;
+    right: 1101px;
+    bottom: 195px;
+    background-color: black;
+}
+#nootzwart2 {
+    width: 40px;
+    height: 155px;
+    border: solid black 1px;
+    position: relative;
+    right: 1091px;
+    bottom: 195px;
+    background-color: black;
+}
+#nootzwart3 {
+    width: 40px;
+    height: 155px;
+    border: solid black 1px;
+    position: relative;
+    right: 1029px;
+    bottom: 195px;
+    background-color: black;
+}
+#nootzwart4 {
+    width: 40px;
+    height: 155px;
+    border: solid black 1px;
+    position: relative;
+    left: 249px;
+    bottom: 353px;
+    background-color: black;
+}
+#nootzwart5 {
+    width: 40px;
+    height: 155px;
+    border: solid black 1px;
+    position: relative;
+    left: 258px;
+    bottom: 353px;
+    background-color: black;
+}
+#nootzwart6 {
+    width: 40px;
+    height: 155px;
+    border: solid black 1px;
+    position: relative;
+    left: 320px;
+    bottom: 353px;
+    background-color: black;
+}
+#nootzwart7 {
+    width: 40px;
+    height: 155px;
+    border: solid black 1px;
+    position: relative;
+    left: 332px;
+    bottom: 353px;
+    background-color: black;
+}
+#nootzwart8 {
+    width: 40px;
+    height: 155px;
+    border: solid black 1px;
+    position: relative;
+    left: 397px;
+    bottom: 353px;
+    background-color: black;
+}
+#nootzwart9 {
+    width: 40px;
+    height: 155px;
+    border: solid black 1px;
+    position: relative;
+    left: 407px;
+    bottom: 353px;
+    background-color: black;
+}
+#nootzwart10 {
+    width: 40px;
+    height: 155px;
+    border: solid black 1px;
+    position: relative;
+    left: 418px;
+    bottom: 353px;
+    background-color: black;
+}
+#nootzwart11 {
+    width: 40px;
+    height: 155px;
+    border: solid black 1px;
+    position: relative;
+    left: 480px;
+    bottom: 353px;
+    background-color: black;
+}
+#nootzwart12 {
+    width: 40px;
+    height: 155px;
+    border: solid black 1px;
+    position: relative;
+    left: 492px;
+    bottom: 353px;
+    background-color: black;
+}
+#nootzwart13 {
+    width: 40px;
+    height: 155px;
+    border: solid black 1px;
+    position: relative;
+    left: 554px;
+    bottom: 353px;
+    background-color: black;
+}
+#nootzwart14 {
+    width: 40px;
+    height: 155px;
+    border: solid black 1px;
+    position: relative;
+    left: 564px;
+    bottom: 353px;
+    background-color: black;
+}
+#nootzwart15 {
+    width: 40px;
+    height: 155px;
+    border: solid black 1px;
+    position: relative;
+    left: 574px;
+    bottom: 353px;
+    background-color: black;
+}
