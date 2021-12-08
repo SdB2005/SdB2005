@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+        canvas {
+            border: 1px solid #d3d3d3;
+            background-color: #f1f1f1;
+        }
+        #button1 {
+            height: 50px;
+            width: 50px;
+            background: url("Assets/arrow_up.png") no-repeat transparent;
+            background-size: 46px 45px;
+            position: relative;
+            top: 15px;
+        }
+        #button2 {
+            height: 50px;
+            width: 50px;
+            background: url("Assets/arrow_left.png") no-repeat transparent;
+            background-size: 46px 45px;
+            position: relative;
+            right: 25px;
+        }
+        #button3 {
+            height: 50px;
+            width: 50px;
+            background: url("Assets/arrow_right.png") no-repeat transparent;
+            background-size: 46px 45px;
+            position: relative;
+            left: 25px;
+        }
+        #button4 {
+            height: 50px;
+            width: 50px;
+            background: url("Assets/arrow_down.png") no-repeat transparent;
+            background-size: 46px 45px;
+            position: relative;
+            bottom: 15px;
+        }
+        #button5 {
+            height: 50px;
+            width: 50px;
+            background: no-repeat transparent;
+           
+            position: absolute;
+            bottom: 74px;
+            left: 223px;
+            
+        }
+    </style>
+</head>
+
+<body onload="startGame()">
+    <script>
+
+        var myGamePiece;
+
+        function startGame() {
+            myGamePiece = new component(50, 50, "Assets/plane_right.png)", 10, 120, "Assets/plane_right.png");
+            myGameArea.start();
+        }
+
+        var myGameArea = {
+            canvas: document.createElement("canvas"),
+            start: function () {
+                this.canvas.width = 1520;
+                this.canvas.height = 550;
+                this.context = this.canvas.getContext("2d");
+                document.body.insertBefore(this.canvas, document.body.childNodes[0]);
+                this.frameNo = 0;
+                this.interval = setInterval(updateGameArea, 20);
+            },
+            clear: function () {
+                this.context.clearRect(0, 0, this.canvas.width, this.canvas.height);
+            },
+            stop: function () {
+                clearInterval(this.interval);
+            }
+        }
+
+        function component(width, height, color, x, y, type) {
+            this.type = type;
+            if (type == "Assets/plane_right.png") {
+                this.image = new Image();
+                this.image.src = color;
+            }
+            this.width = width;
+            this.height = height;
+            this.speedX = 0;
+            this.speedY = 0;
+            this.x = x;
+            this.y = y;
+            this.update = function () {
+                ctx = myGameArea.context;
+                if (type == "Assets/plane_right.png") {
+                    ctx.drawImage(this.image,
+                        this.x,
+                        this.y,
+                        this.width, this.height);
+                } else {
+                    ctx.fillStyle = color;
+                    ctx.fillRect(this.x, this.y, this.width, this.height);
+                }
+            }
+            this.newPos = function () {
+                this.x += this.speedX;
+                this.y += this.speedY;
+            }
+        }
+
+        function updateGameArea() {
+            myGameArea.clear();
+            myGamePiece.newPos();
+            myGamePiece.update();
+        }
+
+        function move(dir) {
+            if (dir == "up") { myGamePiece.speedY = -6; myGamePiece.image.src = "Assets/plane_up.png"; }
+            if (dir == "down") { myGamePiece.speedY = 6; myGamePiece.image.src = "Assets/plane_down.png"; }
+            if (dir == "left") { myGamePiece.speedX = -6; myGamePiece.image.src = "Assets/plane_left.png"; }
+            if (dir == "right") { myGamePiece.speedX = 6; myGamePiece.image.src = "Assets/plane_right.png"; }
+        }
+        function clearmove() {
+            myGamePiece.speedX = 0;
+            myGamePiece.speedY = 0;
+        }
+    </script>
+    <div style="text-align:center;width:480px;">
+        <button id="button1" onmousedown="move('up')"  onclickstart="move('up')"></button><br><br>
+        <button id="button2" onmousedown="move('left')"  ontouchstart="move('left')"></button>
+        <button id="button3" onmousedown="move('right')"  ontouchstart="move('right')"></button><br><br>
+        <button id="button4" onmousedown="move('down')"  ontouchstart="move('down')"></button>
+        <button id="button5" onmousedown="move('stop')" onmouseup="clearmove()">STOP</button>
+
+    </div>
+</body>
+
+</html>
