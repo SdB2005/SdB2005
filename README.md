@@ -1,0 +1,5 @@
+- 👋 Hi, I’m @SdB2005
+- 👀 I’m interested in... code?
+- 🌱 I’m currently learning how to code
+- 💞️ I’m looking to collaborate on no one :sadge:
+- 📫 How to reach me you dont :P
